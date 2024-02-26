@@ -1,0 +1,77 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>File Content</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            pre {
+                display: inline-block;
+                text-align: left;
+            }
+            h1 {
+               background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>QA Report</h1>
+        </header>
+        <pre>
+            ============================= test session starts =============================
+platform win32 -- Python 3.12.2, pytest-8.0.1, pluggy-1.4.0
+rootdir: C:\Users\Faisal\PycharmProjects\testerr
+plugins: cov-4.1.0, html-4.1.1, metadata-3.1.1, reporter-0.5.2
+collected 3 items
+
+test_cases\areasaquare.py F                                              [ 33%]
+test_cases\dividerr.py F                                                 [ 66%]
+test_cases\summation.py .                                                [100%]
+
+================================== FAILURES ===================================
+______________________________ test_AreaSaquare _______________________________
+
+    def test_AreaSaquare():
+>       assert funcs.area_Square(10) ==100
+E       assert 101 == 100
+E        +  where 101 = <function area_Square at 0x00000295D775DE40>(10)
+E        +    where <function area_Square at 0x00000295D775DE40> = funcs.area_Square
+
+
+test_cases\areasaquare.py:4: AssertionError
+________________________________ test_divider _________________________________
+
+    def test_divider():
+>       assert funcs.divider(5,3) == 2
+E       assert 1 == 2
+E        +  where 1 = <function divider at 0x00000295D775DDA0>(5, 3)
+E        +    where <function divider at 0x00000295D775DDA0> = funcs.divider
+
+
+test_cases\dividerr.py:6: AssertionError
+=================================== PASSES ====================================
+
+---------- coverage: platform win32, python 3.12.2-final-0 -----------
+Name                        Stmts   Miss  Cover
+-----------------------------------------------
+pract.py                        8      1    88%
+test_cases\__init__.py          0      0   100%
+test_cases\areasaquare.py       3      0   100%
+test_cases\dividerr.py          4      0   100%
+test_cases\summation.py         3      0   100%
+-----------------------------------------------
+TOTAL                          18      1    94%
+
+=========================== short test summary info ===========================
+PASSED test_cases/summation.py::test_sumation
+FAILED test_cases/areasaquare.py::test_AreaSaquare - assert 101 == 100
+FAILED test_cases/dividerr.py::test_divider - assert 1 == 2
+========================= 2 failed, 1 passed in 0.09s =========================
+
+        </pre>
+    </body>
+    </html>
+    
