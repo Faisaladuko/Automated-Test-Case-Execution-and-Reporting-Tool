@@ -11,7 +11,7 @@ A Python script that automates the execution of test cases and generates a compr
 + Capture test results and generate a detailed report highlighting each test case's pass/fail status.
 
 ## Run Script
-> Include Test_Execution_Script.py into your project root directory and provide the following parameters at the functions call below;
+> Include **Test_Execution_Script.py** into your project root directory and provide the following parameters at the functions call below;
 
 - test_location = 'test_cases'  [Indicate test cases directory here]
 - host = '127.0.0.1'           [Indicate host IP/Domain to ping here]
