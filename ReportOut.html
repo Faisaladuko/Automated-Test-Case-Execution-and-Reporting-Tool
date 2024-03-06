@@ -1,77 +1,316 @@
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>File Content</title>
-        <style>
-            body {
-                text-align: center;
-            }
-            pre {
-                display: inline-block;
-                text-align: left;
-            }
-            h1 {
-               background-color: blue;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <h1>QA Report</h1>
-        </header>
-        <pre>
-            ============================= test session starts =============================
-platform win32 -- Python 3.12.2, pytest-8.0.1, pluggy-1.4.0
-rootdir: C:\Users\Faisal\PycharmProjects\testerr
-plugins: cov-4.1.0, html-4.1.1, metadata-3.1.1, reporter-0.5.2
-collected 3 items
-
-test_cases\areasaquare.py F                                              [ 33%]
-test_cases\dividerr.py F                                                 [ 66%]
-test_cases\summation.py .                                                [100%]
-
-================================== FAILURES ===================================
-______________________________ test_AreaSaquare _______________________________
-
-    def test_AreaSaquare():
->       assert funcs.area_Square(10) ==100
-E       assert 101 == 100
-E        +  where 101 = <function area_Square at 0x00000295D775DE40>(10)
-E        +    where <function area_Square at 0x00000295D775DE40> = funcs.area_Square
-
-
-test_cases\areasaquare.py:4: AssertionError
-________________________________ test_divider _________________________________
-
-    def test_divider():
->       assert funcs.divider(5,3) == 2
-E       assert 1 == 2
-E        +  where 1 = <function divider at 0x00000295D775DDA0>(5, 3)
-E        +    where <function divider at 0x00000295D775DDA0> = funcs.divider
-
-
-test_cases\dividerr.py:6: AssertionError
-=================================== PASSES ====================================
-
----------- coverage: platform win32, python 3.12.2-final-0 -----------
-Name                        Stmts   Miss  Cover
------------------------------------------------
-pract.py                        8      1    88%
-test_cases\__init__.py          0      0   100%
-test_cases\areasaquare.py       3      0   100%
-test_cases\dividerr.py          4      0   100%
-test_cases\summation.py         3      0   100%
------------------------------------------------
-TOTAL                          18      1    94%
-
-=========================== short test summary info ===========================
-PASSED test_cases/summation.py::test_sumation
-FAILED test_cases/areasaquare.py::test_AreaSaquare - assert 101 == 100
-FAILED test_cases/dividerr.py::test_divider - assert 1 == 2
-========================= 2 failed, 1 passed in 0.09s =========================
-
-        </pre>
-    </body>
-    </html>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Report</title>
+    <style>
+        html, body {
+            height:100%;
+            width:100%;
+            margin:0;
+            padding:0;
+        }
+        pre {
+           margin: 0;
+           padding: 0;
+           box-sizing: content-box;
+           white-space: pre-wrap;
+        }
     
+        h1 {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin:0;
+         
+        }
+
+       
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            text-align: left;
+        }
+
+        hr {
+            border: 1px solid lightblue;
+        }
+        .collapsible:hover {
+              background-color: #555;
+        }
+        .collapsible:after {
+              content: '\+';
+              color: white;
+              font-weight: bold;
+              float: right;
+              margin-left: auto;
+              
+        }
+      
+        .collapsible {
+              background-color: #7f8585;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 90%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 1.5vw;
+              margin-left: 10px;
+              box-sizing: border-box;
+              
+              
+             
+       }
+
+        .collapsible-content {
+              padding-top: 0 18px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+              background-color: #f1f1f1;
+              width: 85%;
+              margin-left: 5%;
+              overflow-y: scroll
+              
+        }
+        
+        
+        .active + .collapsible2:hover {
+              background-color: #565;
+        }
+        .collapsible2:after {
+              content: '\+';
+              color: white;
+              font-weight: bold;
+              float: right;
+              margin-left: auto;
+              
+        }
+        
+        
+        .active:after {
+              content: "\-";
+              
+        }
+        .collapsible2 {
+              background-color: red;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 85%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 1.4vw;
+              margin-left: 10%;
+              box-sizing: border-box;     
+             
+       }
+        .collapsible-content2 {
+              padding: 0 18px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.2s ease-out;
+              background-color: #c9c5c5;
+              width: 75%;
+              margin-left: 10%;        
+              
+        }
+        
+           .passList{
+              background-color: green;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 85%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 1.4vw;
+              margin-left: 10%;
+              box-sizing: border-box;     
+       }
+       .funcsnames{
+       background-color: #9e9b9b;
+       text-align: left;
+       font-size: 1vw;
+       color: white;
+       font-weight: bold;
+      
+       
+       }
+       .funcsmessage{
+       text-align: left;
+       font-size: 1vw;
+       }
+      .sum{
+        list-style: none;
+        display: flex;
+        justify-content: space-between; 
+       
+      }
+      .sum li{
+       text-align: center;
+      }
+      
+    .sum .item {
+            text-align: center;
+            background-color: #e0e0e0; 
+            border-radius: 10px; 
+            padding: 10px; 
+            margin: 5px; 
+    }
+      .value {
+            font-weight: bold;
+            font-size: 2vw; 
+        }
+        
+      .label {
+            margin-top: 5px; 
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QA Report</h1>
+    </header>
+    <pre>
+        <br>
+        <button type ='button', class="collapsible">Test Summary</button>
+        <div class="collapsible-content">
+            <ul class=sum>
+                <li class="item">
+                    <div class="value"> 4 </div>
+                    <div class="label">Tested Functions</div>
+                </li>
+                <li class="item">
+                    <div class="value"> 0 </div>
+                    <div class="label">Syntax Errors</div>
+                </li>
+                <li class="item">
+                    <div class="value"> 2 </div>
+                    <div class="label">Passed Functions</div>
+                </li>
+                <li class="item">
+                    <div class="value"> 2 </div>
+                    <div class="label">Failed Functions</div>
+                </li>
+                <li class="item">
+                    <div class="value"> 0 </div>
+                    <div class="label">Skipped Functions</div>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <button type='button', class="collapsible", id='failed'>Failed Tests</button>
+        <div class="collapsible-content">
+            
+                <button type='button', class="collapsible2">
+                module:  ./test_cases.test_areasaquare.py
+                 </button>
+                <div class="collapsible-content2">
+                    <ul>
+                        
+                            <li class='funcsnames'>
+                            _ _ _ _ _ _ _ _ _ _test_AreaSaquare()_ _ _ _ _ _ _ _ _ _ 
+                            </li> 
+                            <code class=funcsmessage>
+                            def test_AreaSaquare():
+&gt;       assert funcs.area_Square(10) ==100
+E       assert 101 == 100
+E        +  where 101 = &lt;function area_Square at 0x00000192F4F7DF80&gt;(10)
+E        +    where &lt;function area_Square at 0x00000192F4F7DF80&gt; = funcs.area_Square
+
+
+test_cases\test_areasaquare.py:4: AssertionError
+                            </code>
+                        
+                    </ul>
+                </div>
+            
+                <button type='button', class="collapsible2">
+                module:  ./test_cases.test_dividerr.py
+                 </button>
+                <div class="collapsible-content2">
+                    <ul>
+                        
+                            <li class='funcsnames'>
+                            _ _ _ _ _ _ _ _ _ _test_divider()_ _ _ _ _ _ _ _ _ _ 
+                            </li> 
+                            <code class=funcsmessage>
+                            def test_divider():
+&gt;       assert funcs.divider(5,3) == 2
+E       assert 1 == 2
+E        +  where 1 = &lt;function divider at 0x00000192F4F7DEE0&gt;(5, 3)
+E        +    where &lt;function divider at 0x00000192F4F7DEE0&gt; = funcs.divider
+
+
+test_cases\test_dividerr.py:6: AssertionError
+                            </code>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+        <hr>
+        <button type='button', class="collapsible", id='passed'>Passed Tests</button>
+        <div class="collapsible-content">
+            <ul>
+                
+                <div class ='passList'>
+                    <li>module: ./test_divider2.py ----------->> func: def test_divider2()</li>
+                </div>
+                
+                <div class ='passList'>
+                    <li>module: ./test_sumation.py ----------->> func: def test_sumation()</li>
+                </div>
+                
+            </ul>
+        </div>
+    </pre>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var coll2 = document.getElementsByClassName("collapsible2");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            console.log(content)
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        
+        
+        
+        for (i = 0; i < coll2.length; i++) {
+          coll2[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
+</body>
+</html>
