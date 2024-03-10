@@ -11,6 +11,7 @@ A Python script that automates the execution of test cases and generates a compr
 + Capture test results and generate a detailed report highlighting each test case's pass/fail status.
 
 ## Output
+https://share.zight.com/X6uXXG09
 ![image](https://github.com/Faisaladuko/Automated-Test-Case-Execution-and-Reporting-Tool/assets/39354209/37d62734-dfb6-46bf-89d2-204a74b8783f)
 ![image](https://github.com/Faisaladuko/Automated-Test-Case-Execution-and-Reporting-Tool/assets/39354209/a5b60256-8b0b-4783-bfcd-7a2ec00583b1)
 ![image](https://github.com/Faisaladuko/Automated-Test-Case-Execution-and-Reporting-Tool/assets/39354209/f0f32d39-eb02-4f82-92c2-a55c36250366)
