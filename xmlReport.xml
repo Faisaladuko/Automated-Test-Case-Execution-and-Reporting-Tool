@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="4" time="0.126" timestamp="2024-03-06T17:41:11.552595" hostname="Faisal"><testcase classname="test_cases.test_areasaquare" name="test_AreaSaquare" time="0.003"><failure message="assert 101 == 100&#10; +  where 101 = &lt;function area_Square at 0x00000192F4F7DF80&gt;(10)&#10; +    where &lt;function area_Square at 0x00000192F4F7DF80&gt; = funcs.area_Square">def test_AreaSaquare():
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="4" time="0.163" timestamp="2024-03-21T03:55:48.200594" hostname="Faisal"><testcase classname="test_cases.test_areasaquare" name="test_AreaSaquare" time="0.003"><failure message="assert 101 == 100&#10; +  where 101 = &lt;function area_Square at 0x000001FC39EBDF80&gt;(10)&#10; +    where &lt;function area_Square at 0x000001FC39EBDF80&gt; = funcs.area_Square">def test_AreaSaquare():
 &gt;       assert funcs.area_Square(10) ==100
 E       assert 101 == 100
-E        +  where 101 = &lt;function area_Square at 0x00000192F4F7DF80&gt;(10)
-E        +    where &lt;function area_Square at 0x00000192F4F7DF80&gt; = funcs.area_Square
+E        +  where 101 = &lt;function area_Square at 0x000001FC39EBDF80&gt;(10)
+E        +    where &lt;function area_Square at 0x000001FC39EBDF80&gt; = funcs.area_Square
 
 
-test_cases\test_areasaquare.py:4: AssertionError</failure></testcase><testcase classname="test_cases.test_dividerr" name="test_divider" time="0.001"><failure message="assert 1 == 2&#10; +  where 1 = &lt;function divider at 0x00000192F4F7DEE0&gt;(5, 3)&#10; +    where &lt;function divider at 0x00000192F4F7DEE0&gt; = funcs.divider">def test_divider():
+test_cases\test_areasaquare.py:4: AssertionError</failure></testcase><testcase classname="test_cases.test_dividerr" name="test_divider" time="0.001"><failure message="assert 1 == 2&#10; +  where 1 = &lt;function divider at 0x000001FC39EBDEE0&gt;(5, 3)&#10; +    where &lt;function divider at 0x000001FC39EBDEE0&gt; = funcs.divider">def test_divider():
 &gt;       assert funcs.divider(5,3) == 2
 E       assert 1 == 2
-E        +  where 1 = &lt;function divider at 0x00000192F4F7DEE0&gt;(5, 3)
-E        +    where &lt;function divider at 0x00000192F4F7DEE0&gt; = funcs.divider
+E        +  where 1 = &lt;function divider at 0x000001FC39EBDEE0&gt;(5, 3)
+E        +    where &lt;function divider at 0x000001FC39EBDEE0&gt; = funcs.divider
 
 
 test_cases\test_dividerr.py:6: AssertionError</failure></testcase><testcase classname="test_cases.test_dividerr" name="test_divider2" time="0.000" /><testcase classname="test_cases.test_summation" name="test_sumation" time="0.000" /></testsuite></testsuites>

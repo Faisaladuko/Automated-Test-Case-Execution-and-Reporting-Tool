@@ -154,10 +154,10 @@ def Reportage(HTML_Report):
                 #print(failed_modules[testcases[i].attrib['classname']])
 
         else:
-            past_modules.append([testcases[i].attrib['name'],testcases[i].attrib['name']])
+            past_modules.append([testcases[i].attrib['name'],testcases[i].attrib['classname']])
     len_past_modules = len(past_modules)
     #print(failed_modules)
-    # print(past_modules)
+    print(past_modules)
     # for k, v in failed_modules.items():
     #     print(k)
     #     for k1, v1 in v.items():
